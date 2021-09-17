@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head')  %> 
+
+<body class="home">
+    
+    <%- include('../partials/header.ejs')  %> 
+
+    <main>
+
+        <section class="products">
+
+            <%- include('./funcion') %>  
+    
+        </section>
+
+        <aside>
+            <section>
+                <h2>Tutoriales</h2>
+
+                <% tutoriales.map(tutorial => {   %> 
+                    <article>
+                        <img src="/images/<%= tutorial.image %> " alt="">
+                        <p> <%= tutorial.title %>  </p>
+                    </article>
+                    <% }) %> 
+                
+            </section>
+
+            <section class="publicidad">
+
+                <h2>Publicidad</h2>
+                <img src="/images/ad-01.jpg" alt="Publicidad">
+                <img src="/images/ad-02.jpg" alt="Publicidad">
+
+            </section>
+
+        </aside>
+
+    </main>
+</body>
+</html>

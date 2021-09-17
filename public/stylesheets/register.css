@@ -1,0 +1,68 @@
+.register {
+    margin: 0 auto;
+    width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+form .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form small {
+    color: red;
+}
+
+form select {
+    width: 50%;
+    border-radius: 10px;
+}
+
+form .input .check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form .input .check label {
+    font-size: .85rem;
+}
+
+form .input .box {
+    width: .7rem;
+
+}
+
+form .input textarea{
+    margin-top: 10px;
+    height: 60px;
+    resize: none;
+}
+
+form .terminos {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+form .inputBttn {
+    display: flex;
+    margin-bottom: 10px;
+    width: 40%;
+    justify-content: space-between;
+}
+
+form .bttn button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+

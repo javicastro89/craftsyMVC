@@ -1,0 +1,139 @@
+.home main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.home .products {
+    
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home .products article {
+    background-color: white;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home .products article img {
+    margin-bottom: 10px;
+}
+
+.home .products article p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.home button {
+    border: none;
+    background-color: var(--color-header);
+    padding: 5px;
+    color: white;
+}
+
+.home aside {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home aside h2{
+    background-color: white;
+    color: gray;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.home aside section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home aside article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: gray;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 1px gray;
+}
+
+.home aside img {
+    border: 1px solid gray;
+}
+
+.home aside .publicidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home aside .publicidad img { 
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 481px) {
+    .home .imageProduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home article h4 {
+        align-self: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .products {
+        width: 65%;
+    }
+
+    .home aside article {
+        width: 100%;
+        
+    }
+
+    .home aside p {
+        margin-left: 10px;
+    }
+
+    .home aside .publicidad img {
+        width: 100%;
+    }
+
+    .home aside {
+        width: 30%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1140px) {
+    .home .products {
+        width: 800px;
+    }
+
+    .home aside {
+        width: 320px;
+    }
+
+    .home main {
+        justify-content: space-between;
+    }
+}

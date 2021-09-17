@@ -1,0 +1,23 @@
+.login {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.login button {
+    margin-top: 20px;
+}
+
+.login .checkLogin {
+    align-self: flex-end;
+}
+
+.login button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
