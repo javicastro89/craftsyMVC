@@ -3,7 +3,7 @@
 
 <%- include('./partials/head')  %> 
 
-<body class="home">
+<body class="admin">
     
     <%- include('./partials/header.ejs')  %> 
 
@@ -12,7 +12,7 @@
 
         <a href="/admin/create">
             <div>
-                <button>Crea tu producto</button>
+                <button class="btn btn-primary">Crea tu producto</button>
             </div>
         </a>
         <div class="table-responsive">
@@ -35,12 +35,12 @@
                 <td>
                     <a href="/admin/edit">
                         <div>
-                            <button>Editar</button>
+                            <button class="btn btn-success">Editar</button>
                         </div>
                     </a>
                     <form>
                         <div>
-                            <button>Eliminar</button>
+                            <button class="btn btn-danger">Eliminar</button>
                         </div>
                     </form>
                 </td>
@@ -53,12 +53,12 @@
                 <td>
                     <a href="/admin/edit">
                         <div>
-                            <button>Editar</button>
+                            <button class="btn btn-success">Editar</button>
                         </div>
                     </a>
                     <form>
                         <div>
-                            <button>Eliminar</button>
+                            <button class="btn btn-danger">Eliminar</button>
                         </div>
                     </form>
                 </td>
@@ -71,12 +71,12 @@
                 <td>
                     <a href="/admin/edit">
                         <div>
-                            <button>Editar</button>
+                            <button class="btn btn-success">Editar</button>
                         </div>
                     </a>
                     <form>
                         <div>
-                            <button>Eliminar</button>
+                            <button class="btn btn-danger">Eliminar</button>
                         </div>
                     </form>
                 </td>
@@ -89,12 +89,12 @@
                 <td>
                     <a href="/admin/edit">
                         <div>
-                            <button>Editar</button>
+                            <button class="btn btn-success">Editar</button>
                         </div>
                     </a>
                     <form>
                         <div>
-                            <button>Eliminar</button>
+                            <button class="btn btn-danger">Eliminar</button>
                         </div>
                     </form>
                 </td>
@@ -103,6 +103,8 @@
           </table>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    
+    <%- include('./partials/footer.ejs')  %> 
 </body>
 </html>

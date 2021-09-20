@@ -1,0 +1,11 @@
+.create{
+    text-align: center;
+}
+.create form{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.create .separar{
+    margin: 20px 0;
+}

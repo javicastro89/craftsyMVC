@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/head')  %> 
+<%- include('./partials/head')  %> 
 
-<body class="home">
+<body class="create">
     
-    <%- include('../partials/header.ejs')  %> 
+    <%- include('./partials/header.ejs')  %> 
 
     <main>
-
+        <h1>Edicion de producto</h1>
+        <form action="" class="Form">
+            <div class="form-floating separar">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre de producto">
+                <label for="name">Nombre</label>
+              </div>
+              <div class="form-floating separar">
+                <input type="text" class="form-control" name="marca" id="marca" placeholder="Marca del producto">
+                <label for="marca">Marca</label>
+              </div>
+              <div class="form-floating separar">
+                <input type="number" class="form-control" id="precio" name="precio">
+                <label for="precio">Precio</label>
+              </div>
+              <select class="form-select separar" aria-label="Default select example separar">
+                <option selected hidden>Selecciona un tipo de producto</option>
+                <option value="1">Telefono</option>
+                <option value="2">Tablet</option>
+                <option value="3">Computadora</option>
+              </select>
+            <select class="form-select separar" aria-label="Default select example separar">
+                <option selected hidden>Selecciona un color</option>
+                <option value="1">Negro</option>
+                <option value="2">Blanco</option>
+                <option value="3">Azul</option>
+                <option value="4">Rojo</option>
+                <option value="5">Gris</option>
+              </select>
+              <div class="form-floating">
+                <textarea class="form-control separar" placeholder="Coloque la descripcion del producto" id="description" name="description" style="height: 100px"></textarea>
+                <label for="description">Descripcion</label>
+              </div>
+            <div class="mb-3 separar">
+                <label for="formFile" class="form-label">Inserte su imagen aqui</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              <div class="col-12">
+                <button class="btn btn-success" type="submit">Editar Producto</button>
+              </div>
+        </form>
     </main>
+    
+    <%- include('./partials/footer.ejs')  %> 
+
 </body>
 </html>
