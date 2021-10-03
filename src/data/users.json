@@ -1,20 +1,8 @@
 [
   {
-    "id": null,
-    "nombre": "Javier ",
-    "email": "javiercastroloureiro@gmail.com"
-  },
-  {
-    "id": null,
-    "nombre": "Juan",
-    "email": "javiercastroloureiro@gmail.com"
-  },
-  {
-    "nombre": "Javier ",
-    "email": "javiercastroloureiro@gmail.com"
-  },
-  {
-    "nombre": "Javier ",
-    "email": "javiercastroloureiro@gmail.com"
+    "nombre": "Cris",
+    "email": "cris@gmail.com",
+    "contraseña": "12345678",
+    "pais": "Argentina"
   }
 ]

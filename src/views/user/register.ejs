@@ -13,39 +13,48 @@
 
             <div class='input'>
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <small>Obligatorio</small>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" value=<%= locals.old && old.nombre ? old.nombre : null %> >
+                <% if (locals.errors && errors.nombre) { %> 
+                    <small> <%= errors.nombre.msg %>  </small>
+                    <% } %> 
+                
             </div>
 
             <div class='input'>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <small>Obligatorio</small>
+                <input type="email" name="email" id="email" placeholder="Email" value=<%= locals.old && old.email ? old.email : null %>>
+                <% if (locals.errors && errors.email) { %> 
+                    <small> <%= errors.email.msg %>  </small>
+                    <% } %> 
             </div>
 
             <div class='input'>
                 <label for="password1">Contraseña</label>
                 <input type="password" name="password" id="password1" placeholder="Contraseña">
-                <small>Obligatorio</small>
+                <% if (locals.errors && errors.password) { %> 
+                    <small> <%= errors.password.msg %>  </small>
+                    <% } %> 
             </div>
             
             <div class='input'>
                 <label for="password2">Confirmar contraseña</label>
-                <input type="password" name="password" id="password2" placeholder="Repetir contraseña">
-                <small>Obligatorio</small>
+                <input type="password" name="password2" id="password2" placeholder="Repetir contraseña">
+                <!-- <small>Obligatorio</small> -->
             </div>
 
             <div class='input'>
                 <h4>Pais de nacimiento</h4>
                 <select name="pais" id="pais">
-                    <option value="" selected hidden>Seleccione su país</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Bolivia">Bolivia</option>                    
+                    <option value="" <%= locals.old && old.pais === '' ? 'selected' : null %> hidden>Seleccione su país</option>
+                    <option value="Argentina" <%= locals.old && old.pais === 'Argentina' ? 'selected' : null %> >Argentina</option>
+                    <option value="Brasil" <%= locals.old && old.pais === 'Brasil' ? 'selected' : null %> >Brasil</option>
+                    <option value="Paraguay" <%= locals.old && old.pais === 'Paraguay' ? 'selected' : null %>>Paraguay</option>
+                    <option value="Uruguay" <%= locals.old && old.pais === 'Uruguay' ? 'selected' : null %>>Uruguay</option>
+                    <option value="Bolivia" <%= locals.old && old.pais === 'Bolivia' ? 'selected' : null %>>Bolivia</option>                    
                 </select>
-                <small>Obligatorio</small>
+                <% if (locals.errors && errors.pais) { %> 
+                    <small> <%= errors.pais.msg %>  </small>
+                    <% } %> 
             </div>
 
             <div class='input'>
