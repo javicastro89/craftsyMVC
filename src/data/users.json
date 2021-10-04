@@ -4,5 +4,17 @@
     "email": "cris@gmail.com",
     "contraseña": "12345678",
     "pais": "Argentina"
+  },
+  {
+    "nombre": "Pedro",
+    "email": "pedro@gmail.com",
+    "contraseña": "12345678",
+    "pais": "Paraguay"
+  },
+  {
+    "nombre": "Maria",
+    "email": "maria@gmail.com",
+    "contraseña": "$2a$10$GVgM9VzNysAUejVxMH49tO/N4aAm9hu967GMyDNrYuPUMLCL2D8PO",
+    "pais": "Argentina"
   }
 ]

@@ -6,13 +6,17 @@
     </div>
     <nav>
         <ul class="menu">
-            <li><a href="/form">Smartphones</a></li>
-            <li><a href="/form">Tablets</a></li>
-            <li><a href="/form">Computadoras</a></li>
+            <li><a href="/products">Smartphones</a></li>
+            <li><a href="/products">Tablets</a></li>
+            <li><a href="/products">Computadoras</a></li>
         </ul>
         <ul class="user">
-            <li><a href="/users/login">Login</a></li>
-            <li><a href="/users/register">Registro</a></li>
+            <% if (!(locals.user)) {%> 
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/users/register">Registro</a></li>
+                <% } else { %> 
+                    <li><form action="/users/logout" method="GET"> <button type="submit"> Cerrar sesión</button> </form></li>
+                    <% } %> 
         </ul>
     </nav>
 </header>

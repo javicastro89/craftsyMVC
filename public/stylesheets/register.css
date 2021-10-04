@@ -66,3 +66,11 @@ form .bttn button {
     border-radius: 10px;
 }
 
+.danger {
+    border-color: red;
+}
+
+.data {
+    border: none;
+    border-bottom: 1px solid black;
+}
